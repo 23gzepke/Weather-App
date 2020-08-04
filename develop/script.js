@@ -79,13 +79,13 @@ $(document).ready(function() {
           // only look at forecasts around 3:00pm
           if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
             // create html elements for a bootstrap card
-            var titleFive = $("<h3>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
-            var imgFive = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
-            var colFive = $("<div>").addClass("col-md-2");
-            var cardFive = $("<div>").addClass("card bg-primary text-white");
-            var cardBodyFive = $("<div>").addClass("card-body p-2");
-            var humidFive = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
-            var tempFive = $("<p>").addClass("card-text").text("Temperature: " + data.list[i].main.temp + " °F");
+            let titleFive = $("<h3>").addClass("card-title").text(new Date(data.list[i].dt_txt).toLocaleDateString());
+            let imgFive = $("<img>").attr("src", "https://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png");
+            let colFive = $("<div>").addClass("col-md-2");
+            let cardFive = $("<div>").addClass("card bg-primary text-white");
+            let cardBodyFive = $("<div>").addClass("card-body p-2");
+            let humidFive = $("<p>").addClass("card-text").text("Humidity: " + data.list[i].main.humidity + "%");
+            let tempFive = $("<p>").addClass("card-text").text("Temperature: " + data.list[i].main.temp + " °F");
 
             // merge together and put on page
             colFive.append(cardFive.append(cardBodyFive.append(titleFive, imgFive, tempFive, humidFive)));
@@ -99,25 +99,28 @@ $(document).ready(function() {
 
   function getUVIndex(lat, lon) {
     $.ajax({
-      type: "",
-      url: "http://api.openweathermap.org/data/2.5/uvi?appid=" + lat + "&lon=" + lon,
+      type: "GET",
+      url: "http://api.openweathermap.org/data/2.5/uvi?appid=04580898c449f53ef56f81a73302d5b1&lat=" + lat + "&lon=" + lon,
       dataType: "json",
       success: function(data) {
         var uv = $("<p>").text("UV Index: ");
         var btn = $("<span>").addClass("btn btn-sm").text(data.value);
+        console.log(data);
         
         // change color depending on uv value
-        if (uvResponse < 3) {
+        if (data.value <= 3) {
           btn.addClass("btn-success");
-      } else if (uvResponse < 7) {
+      } else if (data.value <= 8) {
           btn.addClass("btn-warning");
       } else {
           btn.addClass("btn-danger");
       }
 
-      cardBody.append(uvIndex);
+      btn.append();
       $("#today .card-body").append(uv.append(btn));
       }
+      
+
     });
   }
 

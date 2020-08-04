@@ -1,5 +1,6 @@
 ﻿#forecast {
-  position: absolute;
+  position: auto;
+  width: 80vw;
   left: -4%;
 }
 
