@@ -21,6 +21,12 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
-The following image demonstrates the application functionality:
 
+Using jquery to create a search button and row for saving searches. Setting up an API to aquire weather information from Openweathermap.org and store it locally.
 ![Creating API for current weather conditions](assets/Screenshot(11).png)
+
+Following similar steps as above, I have created an API to aquire a 5 day forcast related to the search value. Then creating the cards to reflect the collected data for the upcoming 5 days.
+![Creating API for 5 day forcast](assets/Screenshot(12).png
+
+
+![Creating API for UV rays](assets/Screenshot(13).png
