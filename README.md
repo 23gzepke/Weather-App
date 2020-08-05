@@ -32,3 +32,7 @@ Following similar steps as above, I have created an API to aquire a 5 day forcas
 Developing an API to collect the UV rays data and display the results with varying colors that represent the level of safety or potential harm those rays can do to the human skin.
 
 ![Creating API for UV rays](assets/Screenshot(13).png
+
+Final App Display
+
+![Website display](assets/Screenshot(15)).png
