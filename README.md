@@ -27,14 +27,14 @@ Using jquery to create a search button and row for saving searches. Setting up a
 
 Following similar steps as above, I have created an API to aquire a 5 day forcast related to the search value. Then creating the cards to reflect the collected data for the upcoming 5 days.
 
-![Creating API for 5 day forcast](.assets/Screenshot(12).png)
+![Creating API for 5 day forcast](/assets/Screenshot(12).png)
 
 Developing an API to collect the UV rays data and display the results with varying colors that represent the level of safety or potential harm those rays can do to the human skin.
 
-![Creating API for UV rays](assets/Screenshot(13).png)
+![Creating API for UV rays](/assets/Screenshot(13).png)
 
 Final App Display
 
-![Website display](.assets/Screenshot(15).png)
+![Website display](/assets/Screenshot(15).png)
 
 ## https://23gzepke.github.io/Weather-App/
