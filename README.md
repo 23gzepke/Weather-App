@@ -23,11 +23,11 @@ WHEN I open the weather dashboard
 THEN I am presented with the last searched city forecast
 
 Using jquery to create a search button and row for saving searches. Setting up an API to aquire weather information from Openweathermap.org and store it locally.
-![Creating API for current weather conditions](assets/Screenshot(11).png)
+![Creating API for current weather conditions](.assets/Screenshot(11).png)
 
 Following similar steps as above, I have created an API to aquire a 5 day forcast related to the search value. Then creating the cards to reflect the collected data for the upcoming 5 days.
 
-![Creating API for 5 day forcast](assets/Screenshot(12).png)
+![Creating API for 5 day forcast](.assets/Screenshot(12).png)
 
 Developing an API to collect the UV rays data and display the results with varying colors that represent the level of safety or potential harm those rays can do to the human skin.
 
@@ -35,6 +35,6 @@ Developing an API to collect the UV rays data and display the results with varyi
 
 Final App Display
 
-![Website display](assets/Screenshot(15).png)
+![Website display](.assets/Screenshot(15).png)
 
 ## https://23gzepke.github.io/Weather-App/
